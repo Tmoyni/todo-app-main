@@ -5,7 +5,7 @@
 [1200 - 1800] is where our normal styles apply
 1800px + :      Big desktop
 
-$breakpoint arguement choices:
+$breakpoint argument choices:
 - phone
 - tab-port
 - tab-land
@@ -26,18 +26,125 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #fafafa;
+  background-image: url(../images/bg-mobile-light.jpg);
+  background-repeat: no-repeat; }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
-  color: white; }
+  font-size: 18px; }
 
 .bold-txt {
   font-weight: 700; }
 
+p {
+  font-weight: 400;
+  font-size: 14px; }
+
+.filter-btn {
+  font-weight: 700;
+  font-size: 14px; }
+
 .attribution {
-  position: absolute;
   font-size: 11px;
   text-align: center;
-  bottom: 20px; }
+  color: red; }
+  .attribution a {
+    color: #3e52a3; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  padding: 4.8rem 2.5rem;
+  width: 375px; }
+  .main .branding {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important; }
+    .main .branding h1 {
+      color: white;
+      font-size: 28px;
+      letter-spacing: .9rem;
+      font-weight: 700;
+      margin-bottom: 3.5rem; }
+  .main .container {
+    background-color: white;
+    width: 100%;
+    border-radius: .5rem;
+    margin-bottom: 1.75rem;
+    overflow: hidden;
+    box-shadow: 0 6.7px 5.3px rgba(28, 30, 69, 0.048), 0 22.3px 17.9px rgba(28, 30, 69, 0.072); }
+  .main .create {
+    height: 4.5rem; }
+    .main .create input {
+      height: 100%;
+      border: none;
+      background: transparent;
+      padding: 1rem 2rem; }
+    .main .create button {
+      border: none;
+      background-color: transparent; }
+  .main .list-item {
+    display: flex;
+    min-height: 5rem;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color: #484b6a;
+    border-bottom: 1px solid #d2d3db;
+    align-items: center; }
+    .main .list-item .circle {
+      display: flex;
+      border: 2px solid #d2d3db;
+      height: 2.2rem;
+      width: 2.2rem;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem; }
+    .main .list-item .list-item-title {
+      justify-self: stretch;
+      flex-grow: 4;
+      font-size: 1.2rem;
+      margin-top: .3rem; }
+    .main .list-item.complete .circle {
+      border: unset;
+      background: linear-gradient(131deg, #57ddff 9%, #c058f3 91%); }
+    .main .list-item.complete .list-item-title {
+      color: #d2d3db;
+      text-decoration: line-through; }
+    .main .list-item .delete {
+      justify-self: end;
+      margin-top: .5rem; }
+      .main .list-item .delete svg {
+        height: 13px;
+        width: auto;
+        stroke: #9394a5; }
+  .main .list-bottom {
+    padding: 1rem 2rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #9394a5; }
+  .main .filter {
+    display: flex;
+    padding: 1rem 2rem;
+    height: 4.5rem;
+    align-items: center;
+    justify-content: center; }
+    .main .filter .filter-btn {
+      margin: 0 1rem;
+      color: #9394a5; }
+      .main .filter .filter-btn.active {
+        color: #3a7bfd; }
+  .main .drag-drop {
+    margin-top: 2.5rem;
+    color: #9394a5;
+    font-weight: 400;
+    font-size: 1.4rem; }

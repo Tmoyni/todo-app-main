@@ -12,4 +12,10 @@ html {
 
 body {
     box-sizing: border-box;
+    //height: 100vh;
+    background-color: $lt-very-light-gray;
+    background-image: url(../images/bg-mobile-light.jpg);
+    //background-image: url(../design/mobile-design-light.jpg);
+    background-repeat: no-repeat;
+
 }

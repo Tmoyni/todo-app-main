@@ -1,36 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <title>Frontend Mentor | Todo app</title>    
+  </head>
+  <body>
+    <div class="main">
+      <div class="branding">
+        <h1>TODO</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"/></svg>
+      </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Todo app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <form class="create container">
+        <input type="text" id="add-item" name="fname" placeholder="Create a new todo...">
+        <button type="submit">add</button>
+      </form>
+      <div class="list container">
+        <div class="list-items">
+          <div class="list-item complete">
+            <div class="circle ">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 9" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+            </div>
+            <div class="list-item-title">Complete online JavaScript course</div>
+            <div class="delete">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18" ><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+            </div>
+          </div>
+          <div class="list-item complete">
+            <div class="circle ">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 9" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+            </div>
+            <div class="list-item-title">Complete online JavaScript course</div>
+            <div class="delete">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18" ><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+            </div>
+          </div>
+          <div class="list-item complete">
+            <div class="circle ">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 9" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+            </div>
+            <div class="list-item-title">Complete online JavaScript course</div>
+            <div class="delete">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18" ><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="circle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 9" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+            </div>
+            <div class="list-item-title">Complete online JavaScript course</div>
+            <div class="delete">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18" ><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="circle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 9" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+            </div>
+            <div class="list-item-title">Complete online JavaScript course</div>
+            <div class="delete">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18" ><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="circle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 9" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+            </div>
+            <div class="list-item-title">Complete online JavaScript course</div>
+            <div class="delete">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18" ><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="list-bottom">
+          <div class="list-number"><span class="number">5</span> items left</div>
+          <div class="list-clear">Clear Completed</div>
+        </div>
+      </div>
+      <div class="filter container">
+        <div class="filter-btn active">All</div>
+        <div class="filter-btn">Active</div>
+        <div class="filter-btn">Completed</div>
+      </div>
+      <div class="drag-drop">Drag and drop to reorder list</div>
+    </div>
+    <div class="footer">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+  </body>
 </html>
