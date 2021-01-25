@@ -105,7 +105,8 @@ p {
       border-radius: 50%;
       align-items: center;
       justify-content: center;
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      background-color: white; }
     .main .list-item .list-item-title {
       justify-self: stretch;
       flex-grow: 4;

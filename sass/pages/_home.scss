@@ -73,6 +73,7 @@
         align-items: center;
         justify-content: center;
         margin-right: 1rem;
+        background-color: white;
       }
 
       .list-item-title {
@@ -80,6 +81,10 @@
         flex-grow: 4;
         font-size: 1.2rem;
         margin-top: .3rem;
+      }
+
+      .check {
+        
       }
 
       &.complete {
